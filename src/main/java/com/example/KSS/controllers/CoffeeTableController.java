@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class CoffeeTableController {
@@ -42,7 +43,7 @@ public class CoffeeTableController {
 
     @GetMapping("/showAllCoffeeProducts")
     public String showAllCoffeeProducts(Model model){
-        List<CoffeeTable> coffeeTable = coffeePowderRegistrationService.getAllCoffeeProducts();
+        Optional<List<CoffeeTable>> coffeeTable = coffeePowderRegistrationService.getAllCoffeeProducts();
 
         model.addAttribute("coffeeTable", coffeeTable);
         return "coffeeDetails";
