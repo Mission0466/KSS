@@ -26,12 +26,8 @@ public class CoffeePowderRegistrationService {
         return coffeePowderRegRepository.save(c);
 
     }
-//
-//    public List<CoffeeTable> getAllCoffeeProducts(){
-//        return coffeePowderRegRepository.findAll();
-//    }
 
-    public Optional<List<CoffeeTable>> getAllCoffeeProducts() {
-        return Optional.of(coffeePowderRegRepository.findAll());  // Assuming `findById` returns an Optional
+    public List<CoffeeTable> getAllCoffeeProducts() {
+        return coffeePowderRegRepository.findAll();  // Assuming `findById` returns an Optional
     }
 }

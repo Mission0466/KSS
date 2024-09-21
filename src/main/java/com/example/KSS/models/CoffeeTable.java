@@ -1,23 +1,20 @@
 package com.example.KSS.models;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
+@Table(name = "coffeeTable")
 public class CoffeeTable extends BaseModel{
-    private String name = "coffee powder";  // Default value
+
     private int weight;
     private int coffeeRatio;
     private int chicoryRatio;
     private int price;
 
-    public CoffeeTable() {
-        // Set default value in case no value is provided
-        this.name = "coffee powder";
-    }
     public int getWeight() {
         return weight;
     }

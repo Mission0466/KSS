@@ -20,7 +20,14 @@ public class BaseModel {
     private Long id;
     private Date createdAt;
     private Date updatedAt;
-    private boolean isDeleted;
+
+    public Long getId() {
+        return id;
+    }
+
+
+
+
 
     public Date getCreatedAt() {
         return createdAt;
@@ -38,11 +45,5 @@ public class BaseModel {
         this.updatedAt = updatedAt;
     }
 
-    public boolean isDeleted() {
-        return isDeleted;
-    }
 
-    public void setDeleted(boolean deleted) {
-        isDeleted = deleted;
-    }
 }

@@ -41,11 +41,17 @@ public class CoffeeTableController {
         return "redirect:/coffeepowderform";
     }
 
-    @GetMapping("/showAllCoffeeProducts")
-    public String showAllCoffeeProducts(Model model){
-        Optional<List<CoffeeTable>> coffeeTable = coffeePowderRegistrationService.getAllCoffeeProducts();
+    @GetMapping("/coffeeProducts")
+    public String showCoffeeProducts(Model model) {
+        List<CoffeeTable> coffeeTableList = coffeePowderRegistrationService.getAllCoffeeProducts(); // Assume this method fetches data
+        if (coffeeTableList == null || coffeeTableList.isEmpty()) {
+            System.out.println("No coffee products found.");
+        } else {
+            System.out.println("Number of coffee products found: " + coffeeTableList.size());
+        }
 
-        model.addAttribute("coffeeTable", coffeeTable);
-        return "coffeeDetails";
+        model.addAttribute("coffeeTableList", coffeeTableList);
+        return "productsPage"; // Resolves to /WEB-INF/views/coffeeProducts.jsp
     }
+
 }
