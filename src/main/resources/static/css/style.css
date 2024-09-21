@@ -18,6 +18,7 @@ header {
   align-items: center; /* Vertically center the logo and nav */
   padding: 20px 40px; /* More padding for breathing space */
   background: linear-gradient(135deg, #6A1B9A, #F48FB1);
+  
  /* Slightly higher opacity */
 }
 
@@ -104,7 +105,7 @@ button:hover {
 
 /* Menu Section */
 .menu-bottom-section {
-  background: linear-gradient(135deg, #11998e, #38ef7d);
+  background: linear-gradient(135deg, #6A1B9A, #F48FB1);
 
 
   padding: 40px 0; /* Increase padding to space out the section */
@@ -148,7 +149,7 @@ footer {
   background: linear-gradient(135deg, #6A1B9A, #F48FB1);
 
 
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   margin-top: 50px; /* Add space above the footer */
 }
