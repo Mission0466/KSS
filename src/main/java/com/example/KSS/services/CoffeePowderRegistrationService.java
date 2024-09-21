@@ -1,12 +1,12 @@
 package com.example.KSS.services;
 
-import com.example.KSS.dtos.CoffeeTableDTO;
+
 import com.example.KSS.models.CoffeeTable;
 import com.example.KSS.repositories.CoffeePowderRegRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
+
 
 @Service
 public class CoffeePowderRegistrationService {
