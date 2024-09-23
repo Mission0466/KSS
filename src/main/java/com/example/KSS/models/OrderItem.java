@@ -1,47 +1,59 @@
 package com.example.KSS.models;
 
+
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.util.Date;
 
 @Entity
-@Table(name = "coffeeTable")
-public class CoffeeTable {
+@Table(name = "order_items")
+public class OrderItem {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long coffeeId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long itemId;
 
-    private Date createdAt;
-    private Date updatedAt;
+    @ManyToOne
+    @JoinColumn(name = "order_id")
+    private Order order;
+
     private int weight;
     private int coffeeRatio;
     private int chicoryRatio;
-
+    private Date createdAt;
+    private Date updatedAt;
 
     public Date getCreatedAt() {
         return createdAt;
     }
 
-
     public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
     }
-
 
     public Date getUpdatedAt() {
         return updatedAt;
     }
 
-
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
     }
+// Getters and setters
 
-    private int price;
+    public Long getItemId() {
+        return itemId;
+    }
+
+    public void setItemId(Long itemId) {
+        this.itemId = itemId;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
+    }
 
     public int getWeight() {
         return weight;
@@ -65,13 +77,5 @@ public class CoffeeTable {
 
     public void setChicoryRatio(int chicoryRatio) {
         this.chicoryRatio = chicoryRatio;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
     }
 }
