@@ -5,15 +5,15 @@ import com.example.KSS.dtos.CoffeeTableDTO;
 import com.example.KSS.models.CoffeeTable;
 import com.example.KSS.services.CoffeePowderRegistrationService;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Repository;
+
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+
 
 import java.util.List;
-import java.util.Optional;
+
 
 @Controller
 public class CoffeeTableController {

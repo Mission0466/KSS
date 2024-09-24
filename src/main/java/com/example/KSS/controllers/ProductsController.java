@@ -2,7 +2,6 @@ package com.example.KSS.controllers;
 
 import com.example.KSS.dtos.CoffeeTableDTO;
 import com.example.KSS.dtos.ProductDTO;
-import com.example.KSS.models.CoffeeTable;
 
 import com.example.KSS.services.ProductsService;
 import org.springframework.stereotype.Controller;
