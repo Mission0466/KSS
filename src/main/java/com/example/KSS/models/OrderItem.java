@@ -10,7 +10,7 @@ import java.util.Date;
 public class OrderItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long itemId;
+    private Long OrderitemId;
 
     @ManyToOne
     @JoinColumn(name = "order_id")
@@ -39,12 +39,12 @@ public class OrderItem {
     }
 // Getters and setters
 
-    public Long getItemId() {
-        return itemId;
+    public Long getOrderitemId() {
+        return OrderitemId;
     }
 
-    public void setItemId(Long itemId) {
-        this.itemId = itemId;
+    public void setOrderitemId(Long orderitemId) {
+        this.OrderitemId = orderitemId;
     }
 
     public Order getOrder() {

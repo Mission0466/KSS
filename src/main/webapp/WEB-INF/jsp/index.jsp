@@ -22,7 +22,7 @@
   <header>
     <div class="logo">
       <!-- Dynamic path for logo -->
-      <img src="${pageContext.request.contextPath}/images/ks-logo.png" alt="KS Coffee Shop Logo">
+      <img src="${pageContext.request.contextPath}/images/logo.png" alt="KS Coffee Shop Logo">
     </div>
     <nav>
       <ul>

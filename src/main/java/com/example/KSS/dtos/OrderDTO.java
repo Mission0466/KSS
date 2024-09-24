@@ -1,6 +1,6 @@
 package com.example.KSS.dtos;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class OrderDTO {
@@ -8,11 +8,9 @@ public class OrderDTO {
     private UserDTO user; // Embedded user information
     private List<OrderItemDTO> orderItems; // List of ordered items
     private int totalPrice;
-    private Date orderDate;
+    private LocalDateTime orderDate; // Changed to LocalDateTime
 
     // Getters and Setters
-
-
     public UserDTO getUser() {
         return user;
     }
@@ -37,11 +35,11 @@ public class OrderDTO {
         this.totalPrice = totalPrice;
     }
 
-    public Date getOrderDate() {
+    public LocalDateTime getOrderDate() {
         return orderDate;
     }
 
-    public void setOrderDate(Date orderDate) {
+    public void setOrderDate(LocalDateTime orderDate) {
         this.orderDate = orderDate;
     }
 }

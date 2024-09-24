@@ -11,6 +11,7 @@
        <script>
            var contextPath = "${pageContext.request.contextPath}";
        </script>
+         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/addressFomStyle.css" />
 </head>
 <body>
 <div class="container mt-5">
@@ -21,7 +22,7 @@
     <ul id="orderDetailsList"></ul>
 
     <!-- User Address Form -->
-    <form:form method="POST" action="/submitAddressDetails" class="border p-4 bg-light rounded">
+
         <div class="form-group">
             <label for="customerName">Name:</label>
             <input type="text" id="customerName" name="customerName" class="form-control" required />
@@ -37,7 +38,7 @@
         <div class="form-group text-center">
             <button id="submitBtn"type="submit" class="btn btn-success">Submit Order</button>
         </div>
-    </form:form>
+
 </div>
 
 

@@ -26,6 +26,7 @@ header {
 .logo img {
   height: 70px; /* Slightly larger logo */
   padding-right: 20px; /* Add padding to the right of logo */
+  background-image : url('/images/logo.png')
 }
 
 nav ul {
@@ -106,9 +107,8 @@ button:hover {
 
 /* Menu Section */
 .menu-bottom-section {
-  background: linear-gradient(135deg, #6A1B9A, #F48FB1);
-
-
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
   padding: 40px 0; /* Increase padding to space out the section */
   display: flex;
   flex-wrap: wrap;

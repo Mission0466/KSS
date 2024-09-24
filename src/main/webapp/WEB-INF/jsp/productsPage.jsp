@@ -11,8 +11,9 @@
     <script>
         var contextPath = "${pageContext.request.contextPath}";
     </script>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/productsPageStyle.css" />
 
-
+   <link>
 </head>
 <body>
 <div class="container mt-5">
@@ -25,7 +26,7 @@
             <select id="weight" class="form-control">
                 <option value="">Select Weight</option>
                 <c:forEach var="weight" items="${weights}">
-                    <option value="${weight}">${weight}</option>
+                    <option value="${weight}">${weight}g</option>
                 </c:forEach>
             </select>
         </div>
