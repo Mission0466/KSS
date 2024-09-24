@@ -31,9 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Please select all fields before adding to the cart.");
         }
     });
-    let delivery = function(response){
 
-    }
     // Event listener for the "Submit Order" button
     submitOrder.addEventListener("click", function() {
         if (selectedItems.length === 0) {
