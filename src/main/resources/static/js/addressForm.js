@@ -22,11 +22,18 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); // Prevent the default form submission
 
         // Gather user details
-        const userDetails = {
-            name: $('#customerName').val(),
-            address: $('#address').val(),
-            phoneNumber: $('#phoneNumber').val()
-        };
+     const userDetails = {
+         name: $('#customerName').val(),
+         address: $('#address').val(),
+         phoneNumber: $('#phoneNumber').val() // Correct field name
+     };
+
+     // Validate the phone number length
+     if (userDetails.phoneNumber.length !== 10) {
+         alert("Phone Number is invalid, kindly check again");
+         return;
+     }
+
 
         // Create the complete order object
         const orderDetails = JSON.parse(sessionStorage.getItem("orderDetails"));

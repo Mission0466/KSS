@@ -33,7 +33,7 @@
         </div>
         <div class="form-group">
             <label for="phoneNumber">Phone Number:</label>
-            <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" required />
+            <input type="number" id="phoneNumber" name="phoneNumber" class="form-control" required />
         </div>
         <div class="form-group text-center">
             <button id="submitBtn"type="submit" class="btn btn-success">Submit Order</button>

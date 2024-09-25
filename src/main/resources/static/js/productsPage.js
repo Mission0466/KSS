@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const coffeeRatio = $('#coffeeRatio').val();
         const chicoryRatio = $('#chicoryRatio').val();
 
+
+
         if(weight && coffeeRatio && chicoryRatio){
             const selectedItem = {
                 weight: weight,
@@ -55,8 +57,9 @@ document.addEventListener("DOMContentLoaded", function() {
              sessionStorage.setItem("totalPrice", response.totalPrice);
 
             },
+
             error: function(error) {
-                alert("Error submitting order. Please try again.");
+                alert("Avaliable items are 90% coffee with 10% chicory, 80% coffee with 20% chicory and 100% coffee with 0 chicory. Please try again with right ratios");
             }
         });
 

@@ -9,7 +9,7 @@
 <body>
 <div class="container mt-5">
     <h2 class="text-center mb-4">Coffee Details Form</h2>
-    <form:form method="POST" action="/submitProductDetails" modelAttribute="productDTO" class="border p-4 bg-light rounded">
+        <form:form method="POST" action="/submitProductDetails" modelAttribute="productDTO" class="border p-4 bg-light rounded">
         <div class="form-group row">
             <label for="weight" class="col-sm-4 col-form-label">Select Weight:</label>
             <div class="col-sm-8">
