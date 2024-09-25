@@ -31,6 +31,7 @@ public class OrderController {
         response.put("totalPrice", orderDTO.getTotalPrice());
 
         return response;
+
     }
 
     @GetMapping("/orderConfirmation")
