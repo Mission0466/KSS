@@ -22,7 +22,7 @@
   <header>
     <div class="logo">
       <!-- Dynamic path for logo -->
-      <img src="${pageContext.request.contextPath}/images/ks-logo.png" alt="KS Coffee Shop Logo">
+      <img src="${pageContext.request.contextPath}/images/logo.png" alt="KS Coffee Shop Logo">
     </div>
     <nav>
       <ul>
@@ -41,7 +41,9 @@
         <h2>Experience the Premium Coffee in Hyderabad</h2>
       </div>
       <div>
-        <button>Order Now</button>
+    <a href="${pageContext.request.contextPath}/Products" class="btn btn-primary">Order Now</a>
+
+
       </div>
     </div>
   </section>
@@ -55,14 +57,14 @@
         <img src="${pageContext.request.contextPath}/images/coffee-powder.jpg" alt="coffee powder" class="coffee-menu-card-image"/>
         <h1 class="menu-card-name"> Coffee Powder</h1>
         <p class="menu-card-price">500 rs</p>
-        <button class="btn btn-primary"> Buy Now</button>
+        <a href="${pageContext.request.contextPath}/Products" class="btn btn-primary">Buy Now</a>
       </div>
 
       <div class="menu-card-item">
         <img src="${pageContext.request.contextPath}/images/coffee-powder.jpg" alt="coffee powder" class="coffee-menu-card-image"/>
         <h1 class="menu-card-name"> Coffee Powder</h1>
         <p class="menu-card-price">500 rs</p>
-        <button class="btn btn-primary"> Buy Now</button>
+        <a href="${pageContext.request.contextPath}/Products" class="btn btn-primary">Buy Now</a>
       </div>
     </div>
 
@@ -71,14 +73,14 @@
         <img src="${pageContext.request.contextPath}/images/coffee-powder.jpg" alt="coffee powder" class="coffee-menu-card-image"/>
         <h1 class="menu-card-name"> Coffee Powder</h1>
         <p class="menu-card-price">500 rs</p>
-        <button class="btn btn-primary"> Buy Now</button>
+      <a href="${pageContext.request.contextPath}/Products" class="btn btn-primary">Buy Now</a>
       </div>
 
       <div class="menu-card-item">
         <img src="${pageContext.request.contextPath}/images/coffee-powder.jpg" alt="coffee powder" class="coffee-menu-card-image"/>
         <h1 class="menu-card-name"> Coffee Powder</h1>
         <p class="menu-card-price">500 rs</p>
-        <button class="btn btn-primary"> Buy Now</button>
+        <a href="${pageContext.request.contextPath}/Products" class="btn btn-primary">Buy Now</a>
       </div>
     </div>
   </div>
