@@ -29,7 +29,7 @@
         <li><a href="${pageContext.request.contextPath}/#home">Home</a></li>
         <li><a href="${pageContext.request.contextPath}/#menu">Menu</a></li>
         <li><a href="${pageContext.request.contextPath}/#about">About Us</a></li>
-        <li><a href="${pageContext.request.contextPath}/#contact">Contact</a></li>
+        <li><a href="${pageContext.request.contextPath}/showContactForm">Contact</a></li>
       </ul>
     </nav>
   </header>

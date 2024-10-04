@@ -1,4 +1,7 @@
 package com.example.KSS.repositories;
 
-public interface ContactRepository {
+import com.example.KSS.models.Contact;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ContactRepository extends JpaRepository<Contact, Long> {
 }

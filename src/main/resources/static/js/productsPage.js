@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 `<li>Weight: ${weight}, Coffee Ratio: ${coffeeRatio}%, Chicory Ratio: ${chicoryRatio}% </li>`
             );
 
+
             // Reset the form fields
             $("#weight").val("");
             $("#coffeeRatio").val("");

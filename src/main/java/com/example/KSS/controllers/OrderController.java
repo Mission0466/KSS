@@ -47,7 +47,6 @@ public class OrderController {
         // Fetch all order DTOs
         List<OrderDTO> orderDTOs = orderService.getAllOrders();
         model.addAttribute("orders", orderDTOs);
-
         return "orderTable"; // Redirect to orderTable.jsp
     }
 }
